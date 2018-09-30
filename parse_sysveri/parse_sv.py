@@ -97,13 +97,14 @@ class SvParser:
 
 
         ##debug pring
+        '''
         for elem in self._enum_ary:
             print(elem)
+        '''
 
-
-        #(?:...)はグルーピングを行わないバージョン
+        #(?:...)は正規表現をグループにまとめる拡張記法　　２’d１，２’b１，,8'h1,,2'o10(=8) 1
         for elem in self._enum_ary:
-            hoge = re.findall(r'[\w]+\s*=\s*[0-9]*\'(?:b|h|d)[0-9a-hA-H]+', elem)
+            hoge = re.findall(r'[\w]+\s*=\s*(?:[0-9]*\'(?:b|h|d|o))?[0-9a-hA-H]+', elem)
 
             print(hoge)
 
@@ -114,8 +115,12 @@ class SvParser:
 if __name__ == '__main__':
     parser = SvParser('hoge2.sv')
 
-    #parser.show_debug()
+    parser.show_debug()
     parser.extract_enum()
+
+    #test1 = '10'
+    #print(int(test1,16))
+
 
 
 

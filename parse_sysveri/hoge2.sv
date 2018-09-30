@@ -18,8 +18,8 @@ enum bit [2: 0] {VAL00 = 3'b000, VAL01 = 3'b001, VAL02 = 3'b010 } hoge3_val; //c
 
 typedef enum bit [7: 0] {
   TEMP_REG0 = 3'd1,
-  TEMP_REG0 = 2,
-  TEMP_REG0 = 8'h4                 
+  TEMP_REG1 = 2,
+  TEMP_REG2 = 8'h4                 
 } temp_val;
 
 reg temp1;
