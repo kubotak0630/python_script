@@ -1,0 +1,93 @@
+body {
+  font-family: 'Avenir','メイリオ', Meiryo,'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  background-color: #F5F5F5;
+}
+
+#header {
+  /*background-color: #CCDFCC;*/
+  margin-bottom:40px
+}
+
+table#summary_table {
+  /*width: 100%;*/
+  border-collapse: collapse;
+  background-color: #CCDFCC;
+  /*border-collapse: separate;*/
+  /*border-spacing: 0px;
+  border-top: 1px solid #FF0000;
+  border-left: 1px solid #FF0000;*/
+  margin-bottom:20px
+}
+
+
+table#summary_table th{
+  padding: 6px 20px;
+  border-bottom: solid 2px #eee;
+  border-right: solid 1px #eee;
+  text-align: left;
+}
+
+table#summary_table td{
+  padding: 3px 20px;	
+  border-bottom: solid 1px #eee;
+  border-right: solid 1px #eee;
+  text-align: left;
+}
+
+/**マウスが上にきた時の処理**/
+
+table#summary_table tr:hover{
+  background-color: #d4f0fd;
+
+}
+
+
+
+table:not(#summary_table) {
+  /*width: 100%;*/
+  border-collapse: collapse;
+  /*border-collapse: separate;*/
+  /*border-spacing: 0px;
+  border-top: 1px solid #FF0000;
+  border-left: 1px solid #FF0000;*/
+  margin-bottom:40px
+}
+
+table:not(#summary_table) th {
+padding: 6px;
+/*text-align: left;*/
+vertical-align: top;
+color: #333;
+/*background-color: #BFBFBF;*/
+background-color: #DDD;
+/*background-color: #65ace4;*/
+border: 1px solid #b9b9b9;
+
+}
+
+table:not(#summary_table) td {
+padding: 3px 6px;
+/*background-color: #ff0;*/
+border: 1px solid #b9b9b9;
+
+}
+
+table:not(#summary_table) td:nth-child(3){
+  text-align: center;
+}
+
+table:not(#summary_table) td:nth-child(5){
+  text-align: center;
+}
+
+span.empha{font-size: large; font-weight: bold;}
+/*
+ul {
+  list-style-type: none;
+}
+*/
+/*
+table tr:nth-child(odd){
+  background-color: #dff;
+}
+*/
